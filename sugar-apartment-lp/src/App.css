@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+html {
+  font-size: 6.25%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+a {
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.App {
+  text-align: center;
+  font-family: 'ヒラギノ丸ゴ ProN W4', 'Hiragino Maru Gothic ProN',
+    'HG丸ｺﾞｼｯｸM-PRO', 'HGMaruGothicMPRO';
+  background: url(./assets/images/bg.jpg) fixed center;
+  background-size: cover;
+  color: white;
+  min-height: 100vh;
+  padding: 0 0 40rem;
+}
+.App-logo {
+  margin: 10vw 0;
+  width: 50%;
+  pointer-events: none;
+  filter: drop-shadow(0 0 25px rgba(255, 255, 255, 0.759));
+}
+.Title {
+  font-size: 30rem;
+  font-weight: bold;
+  padding: 80rem 20rem 40rem;
+  filter: drop-shadow(0 0 4rem rgb(14, 7, 40));
+}
+.Content {
+  filter: drop-shadow(0 0 2rem rgb(14, 7, 40));
+  font-size: 20rem;
+  line-height: 220%;
+  margin: 0;
+  padding: 0 30rem;
 }
 
-@keyframes App-logo-spin {
+.Start-button {
+  width: 400rem;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .Start-button {
+    animation: Start-button-scale infinite 0.9s ease-in-out;
+  }
+}
+.Start-button:hover {
+  filter: brightness(120%);
+}
+@keyframes Start-button-scale {
   from {
-    transform: rotate(0deg);
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.04, 1.04);
   }
   to {
-    transform: rotate(360deg);
+    transform: scale(1, 1);
+  }
+}
+.Screen-shot-container {
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 20rem;
+}
+.Screen-shot {
+  width: 400rem;
+  max-width: 90%;
+  pointer-events: none;
+}
+.Name {
+  font-weight: bolder;
+  font-size: 22rem;
+  padding-bottom: 30rem;
+}
+.Name > a:hover {
+  color: rgb(255, 207, 139);
+  filter: drop-shadow(0 0 5rem rgba(255, 207, 139, 0.759));
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 5%;
+  }
+  .App-logo {
+    width: 78%;
+    padding-top: 20rem;
+    pointer-events: none;
+  }
+  .Start-button {
+    max-width: 100%;
   }
 }
