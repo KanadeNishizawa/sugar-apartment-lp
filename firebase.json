@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "sugar-apartment-lp/build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
