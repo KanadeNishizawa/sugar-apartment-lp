@@ -69,9 +69,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: inherit;
-  line-height: inherit;
-  font-weight: inherit;
+  /* font-size: inherit; */
+  /* line-height: inherit; */
+  /* font-weight: inherit; */
   margin: 0;
 }
 
