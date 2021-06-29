@@ -17,6 +17,7 @@ a {
   user-select: none;
   text-decoration: none;
   color: white;
+  display: inline-block;
 }
 h1 {
   font-size: 3rem;
@@ -30,6 +31,7 @@ p {
   line-height: 220%;
   margin: 0;
   padding: 0 3rem;
+  white-space: pre-wrap;
 }
 
 .App-logo {
@@ -90,14 +92,14 @@ p {
   font-size: 2.2rem;
   padding-bottom: 3rem;
 }
-.Name > a:hover {
+.Name > .Link:hover {
   color: rgb(255, 207, 139);
   filter: drop-shadow(0 0 0.5rem rgba(255, 207, 139, 0.759));
 }
 
 @media screen and (max-width: 800px) {
   html {
-    font-size: 5%;
+    font-size: 50%;
   }
   .App-logo {
     width: 78%;
