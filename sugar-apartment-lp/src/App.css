@@ -96,6 +96,10 @@ p {
   color: rgb(255, 207, 139);
   filter: drop-shadow(0 0 0.5rem rgba(255, 207, 139, 0.759));
 }
+.Footer {
+  padding-top: 2rem;
+  font-size: 1.5rem;
+}
 
 @media screen and (max-width: 800px) {
   html {
